@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subha Privacy Policy | سياسة الخصوصية</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Noto Sans Arabic", Arial, sans-serif;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px;
+      line-height: 1.75;
+      color: #17211d;
+      background: #fff;
+    }
+
+    h1, h2 {
+      line-height: 1.35;
+      color: #0d6b4d;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-top: 32px;
+    }
+
+    .header {
+      margin-bottom: 32px;
+    }
+
+    .language-selector {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 28px;
+    }
+
+    select {
+      min-width: 160px;
+      padding: 10px 14px;
+      border: 1px solid #ccd8d3;
+      border-radius: 10px;
+      background: #fff;
+      color: #17211d;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .info {
+      padding: 16px;
+      border: 1px solid #d7dedb;
+      border-radius: 12px;
+      background: #f6faf8;
+      margin: 20px 0;
+    }
+
+    code {
+      background: #f3f5f4;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+
+    a {
+      color: #0d6b4d;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #e2e8e5;
+      color: #63706a;
+      font-size: 14px;
+    }
+
+    html[dir="rtl"] body {
+      text-align: right;
+    }
+
+    html[dir="rtl"] .language-selector {
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 22px 16px;
+      }
+
+      .language-selector {
+        justify-content: stretch;
+      }
+
+      .language-selector select {
+        width: 100%;
+      }
+
+      html[dir="rtl"] .language-selector {
+        justify-content: stretch;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="language-selector">
+    <select id="languageSelect" aria-label="Select language">
+      <option value="en">English</option>
+      <option value="ar">العربية</option>
+    </select>
+  </div>
+
+  <main id="content"></main>
+
+  <script>
+    const translations = {
+
+      en: {
+        title: "Privacy Policy for Subha",
+        effectiveDate: "Effective date",
+        developer: "Developer / publisher",
+        contact: "Contact",
+        package: "Package",
+
+        effectiveDateValue: "2026-10-01",
+        developerValue: "DEVGENIUS",
+        email: "devgenius1337@gmail.com",
+
+        informationTitle: "Information used by the app",
+
+        locationTitle: "Location.",
+        locationText:
+          "Subha can access foreground device location after you choose a location-based feature and grant permission. It is used for prayer times, Qibla direction, and nearby mosques. You can use a manually selected place instead. When related features are used, coordinates or location queries may be transmitted over HTTPS to services needed for the requested result, including AlAdhan and OpenStreetMap-related Nominatim/Overpass services. Device geocoding may also use the operating system's geocoding provider. Subha does not request Android background location in this version.",
+
+        notificationsTitle: "Notifications.",
+        notificationsText:
+          "Prayer/Adhan and adhkar preferences are stored on the device and local notifications are scheduled by the device. Android may request notification permission and may require Alarms & reminders special access for precise prayer timing.",
+
+        localDataTitle: "Local app data.",
+        localDataText:
+          "Language, theme, prayer adjustments, selected location, dhikr progress/statistics, custom dhikr, cached prayer times, and cached content are stored locally on the device.",
+
+        translationsTitle: "Translations.",
+        translationsText:
+          "When you request a translated meaning, app-provided source text may be sent over HTTPS to the MyMemory translation service, and the result may be cached locally.",
+
+        thirdPartyTitle: "Third-party services",
+        thirdPartyText:
+          "The app may communicate with AlAdhan (prayer times), OpenStreetMap/Nominatim (location lookup), Overpass API/OpenStreetMap data (nearby mosques), countriesNow (country/city lists), MyMemory (on-demand translation), and the device operating system's geocoding provider. Third-party services may process request metadata such as IP address under their own terms and privacy practices.",
+
+        advertisingTitle: "Advertising and analytics",
+        advertisingText:
+          "This version of Subha does not include an advertising SDK or analytics SDK and does not use location for advertising.",
+
+        accountsTitle: "Accounts",
+        accountsText:
+          "This version does not require a Subha account and does not provide account creation.",
+
+        retentionTitle: "Retention and deletion",
+        retentionText:
+          "Locally stored data remains on the device until it is overwritten, cleared by app functionality where available, the app's storage is cleared, or the app is uninstalled. Data processed by third-party services is subject to those providers' retention practices.",
+
+        securityTitle: "Security",
+        securityText:
+          "Network requests in this version use HTTPS endpoints. No storage or transmission method can be guaranteed to be completely secure.",
+
+        childrenTitle: "Children / target audience",
+        childrenText:
+          "Subha is a general Islamic utility application providing features such as prayer times, Qibla direction, adhkar, duas, and Tasbeeh. The app does not knowingly collect personal information directly from children. Parents or guardians should supervise children's use of online services where appropriate.",
+
+        changesTitle: "Changes",
+        changesText:
+          "This policy may be updated when the app's data practices or third-party services change. The effective date above will be updated when changes are published.",
+
+        contactTitle: "Contact",
+        contactText: "For privacy questions, contact:",
+
+        footer:
+          "Subha — Islamic Companion"
+      },
+
+      ar: {
+        title: "سياسة الخصوصية لتطبيق Subha",
+        effectiveDate: "تاريخ السريان",
+        developer: "المطور / الناشر",
+        contact: "البريد الإلكتروني",
+        package: "معرّف التطبيق",
+
+        effectiveDateValue: "2026-10-01",
+        developerValue: "DEVGENIUS",
+        email: "devgenius1337@gmail.com",
+
+        informationTitle: "المعلومات التي يستخدمها التطبيق",
+
+        locationTitle: "الموقع الجغرافي.",
+        locationText:
+          "يمكن لتطبيق Subha الوصول إلى موقع الجهاز أثناء استخدام التطبيق بعد اختيارك لإحدى الميزات التي تعتمد على الموقع ومنح الإذن المطلوب. يُستخدم الموقع لحساب مواقيت الصلاة وتحديد اتجاه القبلة والعثور على المساجد القريبة. ويمكنك بدلاً من ذلك اختيار الموقع يدوياً. عند استخدام الميزات المرتبطة بالموقع، قد يتم إرسال الإحداثيات أو استعلامات الموقع عبر اتصال HTTPS إلى الخدمات اللازمة لتقديم النتيجة المطلوبة، بما في ذلك AlAdhan وخدمات Nominatim وOverpass المرتبطة ببيانات OpenStreetMap. وقد تستخدم عملية تحديد الموقع أيضاً خدمة الترميز الجغرافي التي يوفرها نظام تشغيل الجهاز. لا يطلب هذا الإصدار من Subha إذن الوصول إلى الموقع في الخلفية على نظام Android.",
+
+        notificationsTitle: "الإشعارات.",
+        notificationsText:
+          "يتم تخزين تفضيلات مواقيت الصلاة والأذان والأذكار محلياً على الجهاز، ويتم جدولة الإشعارات المحلية بواسطة الجهاز. قد يطلب نظام Android إذن إرسال الإشعارات، وقد يتطلب أيضاً منح صلاحية «المنبهات والتذكيرات» لضمان دقة توقيت إشعارات الصلاة.",
+
+        localDataTitle: "البيانات المحلية للتطبيق.",
+        localDataText:
+          "يتم تخزين إعدادات اللغة والمظهر وتعديلات مواقيت الصلاة والموقع المحدد وتقدم وإحصائيات الذكر والأذكار المخصصة ومواقيت الصلاة المخزنة مؤقتاً والمحتوى المخزن مؤقتاً محلياً على جهازك.",
+
+        translationsTitle: "الترجمة.",
+        translationsText:
+          "عندما تطلب ترجمة معنى أو نص متاح داخل التطبيق، قد يتم إرسال النص المطلوب عبر اتصال HTTPS إلى خدمة MyMemory للترجمة، وقد يتم تخزين نتيجة الترجمة مؤقتاً على الجهاز.",
+
+        thirdPartyTitle: "خدمات الجهات الخارجية",
+        thirdPartyText:
+          "قد يتواصل التطبيق مع خدمات AlAdhan لحساب مواقيت الصلاة، وOpenStreetMap/Nominatim للبحث عن المواقع، وOverpass API وبيانات OpenStreetMap للعثور على المساجد القريبة، وcountriesNow للحصول على قوائم الدول والمدن، وMyMemory للترجمة عند الطلب، بالإضافة إلى خدمة الترميز الجغرافي التي يوفرها نظام تشغيل الجهاز. قد تعالج هذه الخدمات معلومات مرتبطة بالطلب، مثل عنوان IP، وفقاً لشروطها وسياسات الخصوصية الخاصة بها.",
+
+        advertisingTitle: "الإعلانات والتحليلات",
+        advertisingText:
+          "لا يتضمن هذا الإصدار من Subha حزمة برمجية للإعلانات أو حزمة برمجية للتحليلات، ولا يستخدم الموقع الجغرافي لأغراض إعلانية.",
+
+        accountsTitle: "الحسابات",
+        accountsText:
+          "لا يتطلب هذا الإصدار إنشاء حساب في Subha ولا يوفر ميزة إنشاء حسابات للمستخدمين.",
+
+        retentionTitle: "الاحتفاظ بالبيانات وحذفها",
+        retentionText:
+          "تبقى البيانات المخزنة محلياً على الجهاز إلى أن يتم استبدالها أو حذفها من خلال وظائف التطبيق المتاحة، أو مسح بيانات التطبيق، أو إزالة التطبيق من الجهاز. أما البيانات التي تتم معالجتها بواسطة خدمات الجهات الخارجية فتخضع لسياسات الاحتفاظ بالبيانات الخاصة بتلك الجهات.",
+
+        securityTitle: "الأمان",
+        securityText:
+          "تستخدم طلبات الشبكة في هذا الإصدار اتصالات HTTPS. ومع ذلك، لا يمكن ضمان الأمان الكامل لأي وسيلة لتخزين البيانات أو نقلها.",
+
+        childrenTitle: "الأطفال / الجمهور المستهدف",
+        childrenText:
+          "Subha هو تطبيق إسلامي عام يوفر ميزات مثل مواقيت الصلاة واتجاه القبلة والأذكار والأدعية والتسبيح. لا يقوم التطبيق عن علم بجمع معلومات شخصية مباشرة من الأطفال. ويُنصح الآباء أو الأوصياء بالإشراف على استخدام الأطفال للخدمات المتصلة بالإنترنت عند الحاجة.",
+
+        changesTitle: "التغييرات على سياسة الخصوصية",
+        changesText:
+          "قد يتم تحديث سياسة الخصوصية هذه عند تغيير طريقة تعامل التطبيق مع البيانات أو عند تغيير الخدمات التابعة لجهات خارجية التي يستخدمها التطبيق. وسيتم تحديث تاريخ السريان الموضح في أعلى الصفحة عند نشر أي تغييرات.",
+
+        contactTitle: "التواصل",
+        contactText: "للاستفسارات المتعلقة بالخصوصية، يرجى التواصل عبر:",
+
+        footer:
+          "Subha — الرفيق الإسلامي"
+      }
+    };
+
+    function renderPolicy(language) {
+      const t = translations[language] || translations.en;
+      const isArabic = language === "ar";
+
+      document.documentElement.lang = language;
+      document.documentElement.dir = isArabic ? "rtl" : "ltr";
+
+      document.title = isArabic
+        ? "سياسة الخصوصية | Subha"
+        : "Subha Privacy Policy";
+
+      document.getElementById("content").innerHTML = `
+        <header class="header">
+          <h1>${t.title}</h1>
+
+          <div class="info">
+            <strong>${t.effectiveDate}:</strong> ${t.effectiveDateValue}<br>
+            <strong>${t.developer}:</strong> ${t.developerValue}<br>
+            <strong>${t.contact}:</strong>
+            <a href="mailto:${t.email}">${t.email}</a><br>
+            <strong>${t.package}:</strong>
+            <code>com.akriti.subha</code>
+          </div>
+        </header>
+
+        <section>
+          <h2>${t.informationTitle}</h2>
+
+          <p>
+            <strong>${t.locationTitle}</strong>
+            ${t.locationText}
+          </p>
+
+          <p>
+            <strong>${t.notificationsTitle}</strong>
+            ${t.notificationsText}
+          </p>
+
+          <p>
+            <strong>${t.localDataTitle}</strong>
+            ${t.localDataText}
+          </p>
+
+          <p>
+            <strong>${t.translationsTitle}</strong>
+            ${t.translationsText}
+          </p>
+        </section>
+
+        <section>
+          <h2>${t.thirdPartyTitle}</h2>
+          <p>${t.thirdPartyText}</p>
+        </section>
+
+        <section>
+          <h2>${t.advertisingTitle}</h2>
+          <p>${t.advertisingText}</p>
+        </section>
+
+        <section>
+          <h2>${t.accountsTitle}</h2>
+          <p>${t.accountsText}</p>
+        </section>
+
+        <section>
+          <h2>${t.retentionTitle}</h2>
+          <p>${t.retentionText}</p>
+        </section>
+
+        <section>
+          <h2>${t.securityTitle}</h2>
+          <p>${t.securityText}</p>
+        </section>
+
+        <section>
+          <h2>${t.childrenTitle}</h2>
+          <p>${t.childrenText}</p>
+        </section>
+
+        <section>
+          <h2>${t.changesTitle}</h2>
+          <p>${t.changesText}</p>
+        </section>
+
+        <section>
+          <h2>${t.contactTitle}</h2>
+          <p>
+            ${t.contactText}
+            <a href="mailto:${t.email}">${t.email}</a>
+          </p>
+        </section>
+
+        <footer>
+          ${t.footer}<br>
+          © ${new Date().getFullYear()} DEVGENIUS
+        </footer>
+      `;
+    }
+
+    const languageSelect = document.getElementById("languageSelect");
+
+    /*
+      If the page is opened with:
+        privacy-policy.html?lang=ar
+        privacy-policy.html?lang=en
+
+      that language will be selected.
+
+      This lets the Subha app open the privacy page using its
+      currently selected language.
+    */
+    const params = new URLSearchParams(window.location.search);
+    const requestedLanguage = params.get("lang");
+
+    let initialLanguage = "en";
+
+    if (requestedLanguage && translations[requestedLanguage]) {
+      initialLanguage = requestedLanguage;
+    } else {
+      const browserLanguage =
+        (navigator.language || "en").toLowerCase();
+
+      if (browserLanguage.startsWith("ar")) {
+        initialLanguage = "ar";
+      }
+    }
+
+    languageSelect.value = initialLanguage;
+    renderPolicy(initialLanguage);
+
+    languageSelect.addEventListener("change", function () {
+      renderPolicy(this.value);
+
+      const url = new URL(window.location.href);
+      url.searchParams.set("lang", this.value);
+      window.history.replaceState({}, "", url);
+    });
+  </script>
+
+</body>
+</html>
